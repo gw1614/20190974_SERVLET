@@ -13,6 +13,7 @@ public class ProductRepository
 		phone.setManufacturer("Apple");
 		phone.setUnitsInStock(1000);
 		phone.setCondition("New");
+        
         Product notebook = new Product("P1235", "LG PC 그램", 1500000);
 		notebook.setDescription("13.3-inch, IPS LED display, 5rd Generation Intel Core processors");
 		notebook.setCategory("Notebook");
@@ -26,6 +27,9 @@ public class ProductRepository
 		tablet.setManufacturer("Samsung");
 		tablet.setUnitsInStock(1000);
 		tablet.setCondition("Old");
+
+        
+        
 		
 		// 위와 같이 상품 초기화 하고 아래에 상품을 추가
 
