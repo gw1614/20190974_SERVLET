@@ -1,4 +1,4 @@
 <%
-	response.sendRedirect("login.jsp?error=1");
+	response.sendRedirect("../login/login.jsp?error=1");
 %>
 
