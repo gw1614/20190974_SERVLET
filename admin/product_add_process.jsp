@@ -19,7 +19,7 @@
 	DefaultFileRenamePolicy policy = new DefaultFileRenamePolicy();
 	MultipartRequest multi = new MultipartRequest(request, realFolder, maxSize, encType, policy);
 
-	String productId = multi.getParameter("productid");
+	String productId = multi.getParameter("productId");
 	String name = multi.getParameter("name");
 	String unitPrice = multi.getParameter("unitPrice");
 	String description = multi.getParameter("description");
@@ -54,7 +54,7 @@
 	pstmt.setString(3, unitPrice);
 	pstmt.setString(4, description);
 	pstmt.setString(5, manufacturer);
-    	pstmt.setString(6, category);
+    pstmt.setString(6, category);
 	pstmt.setString(7, unitsInStock);
 	pstmt.setString(8, condition);
 	pstmt.setString(9, fileName);
@@ -64,25 +64,4 @@
  	if (conn != null)
 		conn.close();
 response.sendRedirect("index_ad.jsp");
-
-/*
-
-	ProductRepository dao = ProductRepository.getInstance();
-
-	Product newProduct = new Product();
-	newProduct.setProductId(productId);
-	newProduct.setPname(name);
-	newProduct.setUnitPrice(price);
-	newProduct.setDescription(description);
-	newProduct.setManufacturer(manufacturer);
-	newProduct.setCategory(category);
-	newProduct.setUnitsInStock(stock);
-	newProduct.setCondition(condition);
-	newProduct.setFilename(fileName);
-
-
-	dao.addProduct(newProduct);
-
-	response.sendRedirect("index_ad.jsp");
-    */
 %>

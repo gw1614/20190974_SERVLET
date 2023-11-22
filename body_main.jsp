@@ -28,11 +28,6 @@
                 pstmt = conn.prepareStatement(sql); // 연결 생성
                 rs = pstmt.executeQuery(); // 쿼리 실행
                 while (rs.next()) { // 결과 ResultSet 객체 반복
-
-            /*
-				for (int i = 0; i < listOfProducts.size(); i++) {
-					Product product = listOfProducts.get(i);
-                    */
 			%>
 			<div class="col-md-4">
                 <div class="card bg-dark text-white">
